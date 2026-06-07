@@ -1,0 +1,41 @@
+WILLY LINUX v3.0 "Full Metal Jacket"
+=====================================
+
+Base: Arch Linux (rolling release)
+Desktop Environment: Hyprland (Wayland)
+Theme: Catppuccin Mocha
+Size: ~4.2GB (full installation)
+
+INCLUDED SOFTWARE:
+------------------
+🎮 Gaming: Steam, Lutris, Heroic, Wine, Proton, RetroArch
+💻 Dev: Docker, Python, Node.js, Rust, Go, VS Code, JetBrains Toolbox
+🎨 Creative: GIMP, Inkscape, Krita, OBS, Blender, Kdenlive
+🛠️ System: Timeshift, GParted, Clonezilla, htop, btop
+
+KERNELS:
+--------
+- Linux LTS 6.6.x (default)
+- Linux Zen 6.7.x (performance)
+- Linux Hardened 6.6.x (security)
+
+REPOSITORIES:
+-------------
+- Arch Linux Core
+- Arch Linux Extra
+- Multilib
+- Chaotic-AUR
+
+SYSTEM REQUIREMENTS:
+--------------------
+Minimum: 2GB RAM, 10GB storage, Dual-core CPU
+Recommended: 4GB RAM, 20GB storage, Quad-core CPU
+Ideal: 8GB+ RAM, 50GB+ SSD, 6+ core CPU
+
+CONTACT:
+--------
+Website: https://willylinux.org
+Discord: https://discord.gg/willylinux
+GitHub: https://github.com/willy-linux/willy-linux
+
+LICENSE: GPL v3

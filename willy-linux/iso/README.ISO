@@ -1,0 +1,24 @@
+╔═══════════════════════════════════════════════════════════╗
+║                                                           ║
+║              🎉 WILLY LINUX v3.0 ISO 🎉                  ║
+║                                                           ║
+║  Esta es una ISO de demostración del proyecto             ║
+║  WILLY LINUX - Sistema operativo basado en Arch Linux    ║
+║                                                           ║
+║  Para construir la ISO real:                              ║
+║  1. Ejecuta: sudo ./build.sh                              ║
+║  2. Requiere: Arch Linux con acceso root                  ║
+║  3. Espacio necesario: 20GB+                              ║
+║                                                           ║
+║  Características incluidas:                               ║
+║  ✅ Hyprland (Wayland compositor)                         ║
+║  ✅ Tema Catppuccin Mocha                                 ║
+║  ✅ Steam, Lutris, Gaming stack completo                  ║
+║  ✅ Docker, Python, Node, Rust, Go                        ║
+║  ✅ 3 Kernels: LTS, Zen, Hardened                         ║
+║  ✅ Chaotic-AUR repository                                ║
+║  ✅ Fondos Cyberpunk/Lovers style                         ║
+║                                                           ║
+║  Tamaño estimado de la ISO final: ~4.2GB                  ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝

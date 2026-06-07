@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#grad1)" stroke="#00ffff" stroke-width="3"/>
+  
+  <!-- W Letter - Arch Style -->
+  <path d="M 100,120 L 140,280 L 200,180 L 260,280 L 300,120 L 270,120 L 240,220 L 200,150 L 160,220 L 130,120 Z" 
+        fill="#000000" stroke="#00ffff" stroke-width="4" filter="url(#glow)"/>
+  
+  <!-- Inner accent -->
+  <path d="M 120,140 L 145,240 L 200,165 L 255,240 L 280,140" 
+        fill="none" stroke="#ff00ff" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Text -->
+  <text x="200" y="340" font-family="Arial Black, sans-serif" font-size="28" 
+        fill="#00ffff" text-anchor="middle" letter-spacing="4">WILLY LINUX</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="200" cy="200" r="170" fill="none" stroke="#ff00ff" stroke-width="1" opacity="0.3" stroke-dasharray="10,5"/>
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.2"/>
+</svg>

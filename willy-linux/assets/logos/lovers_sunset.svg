@@ -1,0 +1,48 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sunset" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d1b4e"/>
+      <stop offset="30%" stop-color="#4a1942"/>
+      <stop offset="60%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#ffa07a"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffff00"/>
+      <stop offset="50%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#ff6b6b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="url(#sunset)"/>
+  
+  <!-- Sun -->
+  <circle cx="960" cy="540" r="200" fill="url(#sun)"/>
+  <circle cx="960" cy="540" r="80" fill="#ff6b6b" opacity="0.8"/>
+  
+  <!-- Silhouette couple -->
+  <ellipse cx="850" cy="900" rx="60" ry="150" fill="#0a0a1a"/>
+  <ellipse cx="870" cy="880" rx="40" ry="50" fill="#0a0a1a"/>
+  
+  <ellipse cx="1070" cy="900" rx="60" ry="150" fill="#0a0a1a"/>
+  <ellipse cx="1050" cy="880" rx="40" ry="50" fill="#0a0a1a"/>
+  
+  <!-- Hearts -->
+  <path d="M 960,750 Q 950,740 950,750 Q 950,760 960,770 Q 970,760 970,750 Q 970,740 960,750" 
+        fill="#ff00ff" opacity="0.6"/>
+  <path d="M 960,720 Q 950,710 950,720 Q 950,730 960,740 Q 970,730 970,720 Q 970,710 960,720" 
+        fill="#ff00ff" opacity="0.4"/>
+  <path d="M 960,690 Q 950,680 950,690 Q 950,700 960,710 Q 970,700 970,690 Q 970,680 960,690" 
+        fill="#ff00ff" opacity="0.2"/>
+  
+  <!-- Ground -->
+  <ellipse cx="960" cy="1100" rx="600" ry="100" fill="#0a0a1a"/>
+  
+  <!-- Stars -->
+  <circle cx="300" cy="200" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="600" cy="150" r="1.5" fill="#ffffff" opacity="0.6"/>
+  <circle cx="1400" cy="180" r="2" fill="#ffffff" opacity="0.7"/>
+  <circle cx="1700" cy="120" r="1.5" fill="#ffffff" opacity="0.5"/>
+  
+  <!-- Willy W watermark -->
+  <text x="1800" y="1000" font-family="Arial Black" font-size="80" fill="#00ffff" text-anchor="middle" opacity="0.2">W</text>
+</svg>
