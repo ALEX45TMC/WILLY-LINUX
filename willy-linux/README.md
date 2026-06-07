@@ -1,238 +1,179 @@
-# README - WILLY LINUX
-## Sistema Operativo Ligero basado en Arch Linux
-
-![Willy Linux](https://img.shields.io/badge/Willy_Linux-v1.0--alpha-blue)
-![Arch Linux](https://img.shields.io/badge/Base-Arch_Linux-1793d1?logo=arch-linux)
-![License](https://img.shields.io/badge/License-GPL_v3-green)
-
----
-
-## 🚀 Características Principales
-
-### Base del Sistema
-- **Distribución base:** Arch Linux (rolling release)
-- **Kernel:** Linux LTS (estabilidad garantizada)
-- **Arquitectura:** x86_64
-- **Gestor de paquetes:** Pacman + AUR (yay/paru)
-
-### Entorno Gráfico Moderno
-- **Compositor:** Hyprland (Wayland)
-- **Barra de estado:** Waybar (altamente personalizable)
-- **Launcher:** Rofi (tema Catppuccin)
-- **Notificaciones:** Dunst
-- **Terminal:** Kitty (GPU accelerated)
-
-### Aplicaciones Incluidas
-- **Navegador:** Firefox
-- **Gestor de archivos:** Thunar
-- **Editor de texto:** Leafpad, Vim, Micro
-- **Reproductor multimedia:** MPV
-- **Visor de imágenes:** Feh
-- **Utilidades:** htop, btop, neofetch, fastfetch
-
-### Características Destacadas
-✅ **Ligero:** ~800MB RAM en idle  
-✅ **Moderno:** Wayland + animaciones fluidas  
-✅ **Completo:** Todo lo necesario para uso diario  
-✅ **Personalizable:** Configuraciones predefinidas pero modificables  
-✅ **Estable:** Kernel LTS + paquetes probados  
-✅ **Rápido:** Boot optimizado < 10 segundos  
-
----
-
-## 📋 Requisitos del Sistema
-
-### Mínimos
-- CPU: Dual-core 64-bit
-- RAM: 2 GB
-- Almacenamiento: 10 GB
-- GPU: Cualquier tarjeta con soporte Wayland
-
-### Recomendados
-- CPU: Quad-core o superior
-- RAM: 4 GB o más
-- Almacenamiento: 20+ GB SSD
-- GPU: Intel HD Graphics 4000+, AMD GCN+, NVIDIA GTX 600+
-
----
-
-## 🛠️ Estructura del Proyecto
+# WILLY LINUX - Complete Project Structure
 
 ```
 willy-linux/
-├── build.sh                  # Script principal de construcción
+├── build.sh                  # Advanced build script v2.0
+├── README.md                 # Complete documentation
+├── LICENSE                   # GPL v3 License
+├── .gitignore               # Git ignore rules
+│
 ├── config/
-│   ├── pacman.conf          # Configuración de Pacman
+│   ├── pacman.conf          # Pacman configuration (optimized)
+│   │
 │   ├── hyprland/
-│   │   ├── hyprland.conf    # Configuración de Hyprland
-│   │   ├── waybar-config.json
-│   │   └── waybar-style.css
-│   └── rofi/
-│       ├── config.rasi
-│       └── willy-linux.rasi
-├── rootfs/                   # Sistema de archivos raíz (generado)
-├── iso/                      # Archivos temporales de la ISO
-└── README.md                 # Este archivo
+│   │   ├── hyprland.conf    # Hyprland compositor config
+│   │   ├── waybar-config.json  # Waybar module configuration
+│   │   ├── waybar-style.css    # Catppuccin Mocha theme
+│   │   └── startup.sh       # Autostart applications
+│   │
+│   ├── rofi/
+│   │   ├── config.rasi      # Rofi main configuration
+│   │   └── willy-linux.rasi # Catppuccin theme
+│   │
+│   ├── wallpapers/          # Default wallpapers directory
+│   ├── grub/                # GRUB customization files
+│   └── systemd/             # Custom systemd services
+│
+├── scripts/
+│   ├── post-install.sh      # Post-installation setup
+│   ├── update-system.sh     # System update helper
+│   └── backup-config.sh     # Configuration backup tool
+│
+├── rootfs/                   # Root filesystem (generated during build)
+│   └── ...
+│
+└── iso/                      # ISO build artifacts (generated)
+    └── ...
 ```
 
----
+## 🎯 Key Features Summary
 
-## 🔧 Instalación / Construcción
+### System Base
+- **Base:** Arch Linux (rolling release)
+- **Kernel:** Linux LTS (stable, production-ready)
+- **Package Manager:** Pacman + AUR support (yay/paru ready)
+- **Architecture:** x86_64
 
-### Método 1: Construir desde cero (Recomendado para desarrolladores)
+### Desktop Environment (Modern & Lightweight)
+- **Compositor:** Hyprland (Wayland, GPU-accelerated)
+- **Bar:** Waybar with Catppuccin Mocha theme
+- **Launcher:** Rofi with custom theme
+- **Terminal:** Kitty (GPU accelerated) + Foot (fallback)
+- **Notifications:** Dunst
+- **File Manager:** Thunar with volume management
+- **Image Viewer:** Feh + imv
+- **Video Player:** MPV
 
+### Audio Stack
+- **Server:** PipeWire + WirePlumber
+- **Control:** pavucontrol
+- **Compatibility:** PulseAudio emulation included
+
+### Included Applications
+- **Browser:** Firefox
+- **Office:** LibreOffice Fresh
+- **Utilities:** htop, btop, neofetch, fastfetch
+- **Tools:** GParted, Timeshift, GNOME Disk Utility
+- **Archive:** p7zip, file-roller, unzip
+
+### Fonts & Themes
+- **Fonts:** JetBrains Mono, Fira Code, Noto family
+- **Icons:** Papirus Icon Theme
+- **GTK Theme:** Catppuccin Mocha
+- **Cursor:** Catppuccin cursors
+
+### Performance
+- **RAM Usage:** ~600-800MB at idle
+- **Boot Time:** <10 seconds on SSD
+- **Storage:** ~8GB base installation
+
+## 🔧 Build Instructions
+
+### Prerequisites
+- Arch Linux system (or VM)
+- Root access
+- 20+ GB free space
+- Internet connection
+
+### Build Process
 ```bash
-# Clonar el repositorio
-git clone https://github.com/tu-usuario/willy-linux.git
-cd willy-linux
-
-# Hacer ejecutable el script
+cd /workspace/willy-linux
 chmod +x build.sh
-
-# Ejecutar como root (requiere entorno Arch Linux)
 sudo ./build.sh
 ```
 
-**Nota:** Este proceso requiere:
-- Sistema Arch Linux funcionando
-- Conexión a internet
-- Al menos 15GB de espacio libre
-- Paquetes de construcción instalados
+### Commands
+- `./build.sh` or `./build.sh build` - Build complete ISO
+- `./build.sh clean` - Remove build artifacts
+- `./build.sh help` - Show usage
 
-### Método 2: Usar ISO pre-construida (Próximamente)
+### Output
+- ISO: `/workspace/willy-linux/willy-linux-v2.0-beta-YYYYMMDD.iso`
+- Checksum: `.sha256` file included
 
-Descargar la ISO desde las releases y grabarla en USB:
+## ⌨️ Keyboard Shortcuts
 
+| Shortcut | Action |
+|----------|--------|
+| `SUPER + Enter` | Open Kitty terminal |
+| `SUPER + SPACE` | Open Rofi launcher |
+| `SUPER + E` | Open Thunar file manager |
+| `SUPER + F` | Open Firefox browser |
+| `SUPER + SHIFT + Q` | Close active window |
+| `SUPER + D` | Toggle floating mode |
+| `SUPER + [1-9]` | Switch to workspace N |
+| `SUPER + SHIFT + [1-9]` | Move window to workspace N |
+| `SUPER + SHIFT + S` | Screenshot (area select) |
+| `SUPER + PRINT` | Full screenshot |
+| `XF86Audio*` | Media controls (auto-detected) |
+
+## 📦 Installation
+
+### Live USB
 ```bash
-# Descargar ISO
-wget https://github.com/tu-usuario/willy-linux/releases/download/v1.0/willy-linux-v1.0.iso
-
-# Grabar en USB (reemplazar /dev/sdX con tu dispositivo)
-sudo dd if=willy-linux-v1.0.iso of=/dev/sdX bs=4M status=progress oflag=sync
+sudo dd if=willy-linux-*.iso of=/dev/sdX bs=4M status=progress
+sync
 ```
 
----
+### Install to Disk
+1. Boot from USB
+2. Run: `willy-install`
+3. Follow prompts
+4. Reboot
 
-## ⌨️ Atajos de Teclado Principales
+### First Boot
+Run `willy-first-run username password` to create user account.
 
-### Navegación Básica
-| Tecla | Acción |
-|-------|--------|
-| `SUPER + Enter` | Abrir terminal (Kitty) |
-| `SUPER + SPACE` | Launcher de aplicaciones (Rofi) |
-| `SUPER + E` | Abrir gestor de archivos (Thunar) |
-| `SUPER + F` | Abrir navegador (Firefox) |
-| `SUPER + SHIFT + Q` | Cerrar ventana activa |
+## 🐛 Troubleshooting
 
-### Gestión de Ventanas
-| Tecla | Acción |
-|-------|--------|
-| `SUPER + D` | Flotar/Desflotar ventana |
-| `SUPER + P` | Modo pseudo-tiling |
-| `SUPER + J` | Cambiar división |
-| `SUPER + Flechas` | Mover foco entre ventanas |
-
-### Workspaces
-| Tecla | Acción |
-|-------|--------|
-| `SUPER + [1-9]` | Cambiar al workspace N |
-| `SUPER + SHIFT + [1-9]` | Mover ventana al workspace N |
-
-### Multimedia
-| Tecla | Acción |
-|-------|--------|
-| `XF86AudioRaiseVolume` | Subir volumen |
-| `XF86AudioLowerVolume` | Bajar volumen |
-| `XF86AudioMute` | Silenciar |
-| `XF86AudioPlay/Pause` | Play/Pause |
-
-### Capturas de Pantalla
-| Tecla | Acción |
-|-------|--------|
-| `SUPER + SHIFT + S` | Captura de área seleccionada |
-| `SUPER + PRINT` | Captura de pantalla completa |
-
----
-
-## 🎨 Personalización
-
-### Cambiar fondo de pantalla
+### Hyprland won't start
 ```bash
-swww img /ruta/a/tu/imagen.jpg
-```
-
-### Modificar tema de colores
-Editar los archivos en `~/.config/hypr/` y `~/.config/waybar/`
-
-### Instalar software adicional
-```bash
-# Desde AUR (usando yay)
-yay -S nombre-del-paquete
-
-# Desde repositorios oficiales
-sudo pacman -S nombre-del-paquete
-```
-
----
-
-## 🐛 Solución de Problemas
-
-### Hyprland no inicia
-Verificar que tu GPU soporte Wayland:
-```bash
+# Check GPU compatibility
 glxinfo | grep "OpenGL version"
+# Try nomodeset boot option
 ```
 
-### Problemas de audio
-Reiniciar PipeWire:
+### No audio
 ```bash
 systemctl --user restart pipewire pipewire-pulse wireplumber
 ```
 
-### WiFi no funciona
-Instalar drivers propietarios si es necesario:
+### WiFi issues
 ```bash
-sudo pacman -S broadcom-wl-dkms  # Para Broadcom
+# Install proprietary drivers if needed
+sudo pacman -S broadcom-wl-dkms  # Broadcom
+sudo pacman -S rtl8723ds-fw     # Realtek
 ```
 
----
+## 🤝 Contributing
 
-## 🤝 Contribuir
+1. Fork the repository
+2. Create feature branch
+3. Make changes
+4. Submit pull request
 
-¡Las contribuciones son bienvenidas!
+## 📄 License
 
-1. Fork el proyecto
-2. Crea una rama (`git checkout -b feature/nueva-caracteristica`)
-3. Commit tus cambios (`git commit -m 'Añadir nueva característica'`)
-4. Push a la rama (`git push origin feature/nueva-caracteristica`)
-5. Abre un Pull Request
+GPL v3 - See LICENSE file
 
----
+## 🙏 Credits
 
-## 📄 Licencia
-
-Este proyecto está bajo la licencia GPL v3. Ver [LICENSE](LICENSE) para más detalles.
-
----
-
-## 🙏 Agradecimientos
-
-- [Arch Linux](https://archlinux.org/) - Por la excelente distribución base
-- [Hyprland](https://hyprland.org/) - Por el compositor Wayland
-- [Catppuccin](https://catppuccin.com/) - Por el hermoso tema de colores
-- [Waybar](https://github.com/Alexays/Waybar) - Por la barra de estado
-- [Rofi](https://github.com/davatorium/rofi) - Por el launcher
+- Arch Linux team
+- Hyprland developers
+- Catppuccin community
+- All open-source contributors
 
 ---
 
-## 📬 Contacto
-
-- Website: (próximamente)
-- Discord: (próximamente)
-- Email: willylinux@example.com
-
----
-
-**Hecho con ❤️ por la comunidad Willy Linux**
-
-*"Ligero, rápido y poderoso"*
+**Willy Linux** - *"Lightweight, Fast, Powerful"*
+Made with ❤️ by the Willy Linux Community
