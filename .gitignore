@@ -1,14 +1,4 @@
-```
-# Compiled and binary files
-*.pyc
-*.o
-*.obj
-*.out
-*.exe
-*.dll
-*.so
-*.a
-
+```gitignore
 # Dependencies
 node_modules/
 venv/
@@ -16,12 +6,21 @@ venv/
 __pycache__/
 .mypy_cache/
 .pytest_cache/
+dist/
+build/
 target/
 .gradle/
 
-# Build artifacts
-dist/
-build/
+# Compiled files
+*.pyc
+*.class
+*.o
+*.exe
+*.dll
+*.so
+*.a
+*.obj
+*.out
 
 # Editor/IDE files
 .vscode/
@@ -37,10 +36,8 @@ Thumbs.db
 .env.local
 *.env.*
 
-# Logs
+# Logs and coverage
 *.log
-
-# Coverage
 coverage/
 htmlcov/
 .coverage
