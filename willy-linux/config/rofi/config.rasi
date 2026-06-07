@@ -1,0 +1,164 @@
+# Rofi configuration for Willy Linux
+# Modern app launcher with Catppuccin theme
+
+configuration {
+    modi: "drun,filebrowser,run";
+    show-icons: true;
+    icon-theme: "Papirus";
+    font: "JetBrains Mono 12";
+    display-drun: "Apps";
+    display-run: "Run";
+    display-filebrowser: "Files";
+    drun-display-format: "{name}";
+    sidebar-mode: false;
+}
+
+@theme "willy-linux"
+
+window {
+    width: 600px;
+    location: center;
+    anchor: center;
+    fullscreen: false;
+    x-offset: 0;
+    y-offset: 0;
+    enabled: true;
+    border-radius: 12px;
+    cursor: default;
+}
+
+mainbox {
+    enabled: true;
+    spacing: 10px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: @background;
+    children: [inputbar, message, listview];
+}
+
+inputbar {
+    enabled: true;
+    spacing: 10px;
+    margin: 0px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: @input-background;
+    text-color: @text;
+    placeholder: "Search applications...";
+    placeholder-color: @placeholder;
+    children: [prompt, entry];
+}
+
+prompt {
+    enabled: true;
+    background-color: transparent;
+    text-color: @accent;
+    padding: 4px;
+}
+
+entry {
+    enabled: true;
+    background-color: transparent;
+    text-color: @text;
+    padding: 4px;
+    placeholder: "Search...";
+    placeholder-color: @placeholder;
+    cursor: text;
+}
+
+message {
+    enabled: true;
+    margin: 5px 0px 0px 0px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: @message-background;
+    text-color: @text;
+}
+
+error-message {
+    padding: 10px;
+    background-color: @error-background;
+    text-color: @error-text;
+}
+
+listview {
+    enabled: true;
+    columns: 1;
+    lines: 8;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    reverse: false;
+    fixed-height: true;
+    fixed-columns: true;
+    spacing: 6px;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    text-color: @text;
+    cursor: default;
+}
+
+element {
+    enabled: true;
+    spacing: 10px;
+    margin: 0px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    text-color: @text;
+    cursor: pointer;
+}
+
+element-icon {
+    size: 24px;
+    margin: 0px 8px 0px 0px;
+    padding: 0px;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: inherit;
+}
+
+element-text {
+    enabled: true;
+    background-color: transparent;
+    text-color: @text;
+    horizontal-align: left;
+    vertical-align: center;
+    cursor: inherit;
+}
+
+element selected {
+    enabled: true;
+    background-color: @selected-background;
+    text-color: @selected-text;
+}
+
+element selected element-icon {
+    background-color: transparent;
+    text-color: @selected-text;
+}
+
+element selected element-text {
+    background-color: transparent;
+    text-color: @selected-text;
+}
+
+element alternate {
+    enabled: true;
+    background-color: transparent;
+    text-color: @text;
+}
+
+element normal {
+    background-color: transparent;
+    text-color: @text;
+}
+
+element urgent {
+    background-color: @urgent-background;
+    text-color: @urgent-text;
+}

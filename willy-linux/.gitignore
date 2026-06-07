@@ -1,0 +1,43 @@
+# .gitignore for Willy Linux Project
+
+# Generated files
+*.iso
+rootfs/*
+iso/arch/*
+!iso/.gitkeep
+!rootfs/.gitkeep
+
+# Build artifacts
+*.log
+*.tmp
+*.bak
+
+# Package manager cache
+*.pkg.tar.xz
+*.pkg.tar.zst
+/var/cache/pacman/
+
+# Temporary files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-*
+.project
+.settings/
+
+# Test files
+test_*.sh
+*.test
+
+# Documentation build
+docs/_build/
+
+# Local configuration overrides
+config/local.conf
+*.local

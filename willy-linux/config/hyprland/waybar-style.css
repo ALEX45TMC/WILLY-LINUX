@@ -1,0 +1,100 @@
+/* Waybar CSS Styling for Willy Linux */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(30, 30, 46, 0.9);
+    color: #cdd6f4;
+    border-bottom: 2px solid rgba(137, 180, 250, 0.3);
+}
+
+#workspaces {
+    background: transparent;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    margin: 2px 4px;
+    border-radius: 8px;
+    background: rgba(49, 50, 68, 0.8);
+    color: #cdd6f4;
+    transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+    background: rgba(137, 180, 250, 0.4);
+    color: #89b4fa;
+    font-weight: bold;
+}
+
+#workspaces button:hover {
+    background: rgba(137, 180, 250, 0.2);
+    box-shadow: 0 0 10px rgba(137, 180, 250, 0.3);
+}
+
+#window {
+    margin: 0 10px;
+    font-weight: normal;
+}
+
+#tray {
+    margin: 0 10px;
+}
+
+#pulseaudio,
+#network,
+#battery,
+#clock {
+    padding: 0 12px;
+    margin: 2px 4px;
+    border-radius: 8px;
+    background: rgba(49, 50, 68, 0.6);
+}
+
+#pulseaudio {
+    color: #f38ba8;
+}
+
+#network {
+    color: #a6e3a1;
+}
+
+#battery {
+    color: #fab387;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #94e2d5;
+}
+
+#battery.critical:not(.charging) {
+    background: rgba(243, 139, 168, 0.3);
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    to {
+        background: rgba(243, 139, 168, 0.6);
+    }
+}
+
+#clock {
+    color: #89b4fa;
+    font-weight: bold;
+}
+
+tooltip {
+    background: rgba(30, 30, 46, 0.95);
+    border: 1px solid rgba(137, 180, 250, 0.3);
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: #cdd6f4;
+}
