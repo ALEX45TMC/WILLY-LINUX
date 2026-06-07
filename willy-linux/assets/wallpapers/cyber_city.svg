@@ -1,0 +1,48 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="50%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#2d1b4e"/>
+    </linearGradient>
+    <linearGradient id="neon1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ffff"/>
+      <stop offset="100%" stop-color="#ff00ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <circle cx="200" cy="150" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="500" cy="100" r="1.5" fill="#ffffff" opacity="0.6"/>
+  <circle cx="800" cy="200" r="2" fill="#ffffff" opacity="0.7"/>
+  <circle cx="1200" cy="120" r="1.5" fill="#ffffff" opacity="0.5"/>
+  <circle cx="1600" cy="180" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="1700" cy="200" r="60" fill="#1a1a2e" stroke="#00ffff" stroke-width="2"/>
+  <rect x="0" y="600" width="200" height="480" fill="#0a0a1a"/>
+  <rect x="180" y="500" width="150" height="580" fill="#0f0f1f"/>
+  <rect x="320" y="650" width="180" height="430" fill="#0a0a1a"/>
+  <rect x="480" y="450" width="200" height="630" fill="#0f0f1f"/>
+  <rect x="660" y="550" width="160" height="530" fill="#0a0a1a"/>
+  <rect x="800" y="400" width="220" height="680" fill="#0f0f1f"/>
+  <rect x="1000" y="520" width="180" height="560" fill="#0a0a1a"/>
+  <rect x="1160" y="480" width="200" height="600" fill="#0f0f1f"/>
+  <rect x="1340" y="600" width="170" height="480" fill="#0a0a1a"/>
+  <rect x="1490" y="420" width="210" height="660" fill="#0f0f1f"/>
+  <rect x="1680" y="550" width="240" height="530" fill="#0a0a1a"/>
+  <g opacity="0.7">
+    <rect x="520" y="500" width="10" height="15" fill="#00ffff"/>
+    <rect x="540" y="500" width="10" height="15" fill="#ff00ff"/>
+    <rect x="520" y="530" width="10" height="15" fill="#ff00ff"/>
+    <rect x="540" y="530" width="10" height="15" fill="#00ffff"/>
+    <rect x="850" y="450" width="12" height="18" fill="#00ffff"/>
+    <rect x="870" y="450" width="12" height="18" fill="#ff00ff"/>
+    <rect x="850" y="480" width="12" height="18" fill="#ff00ff"/>
+    <rect x="870" y="480" width="12" height="18" fill="#00ffff"/>
+    <rect x="1200" y="530" width="10" height="15" fill="#00ffff"/>
+    <rect x="1220" y="530" width="10" height="15" fill="#ff00ff"/>
+    <rect x="1550" y="480" width="12" height="18" fill="#00ffff"/>
+    <rect x="1570" y="480" width="12" height="18" fill="#ff00ff"/>
+  </g>
+  <rect x="0" y="1000" width="1920" height="80" fill="url(#neon1)" opacity="0.2"/>
+  <circle cx="960" cy="540" r="100" fill="none" stroke="#00ffff" stroke-width="2" opacity="0.3"/>
+  <text x="960" y="550" font-family="Arial Black" font-size="40" fill="#00ffff" text-anchor="middle" opacity="0.5">W</text>
+</svg>
