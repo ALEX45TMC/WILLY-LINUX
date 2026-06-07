@@ -1,0 +1,52 @@
+# WILLY LINUX - License GPL v3
+
+Copyright (c) 2024 Willy Linux Project
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+---
+
+## Additional Terms
+
+### Attribution
+When distributing Willy Linux or derivative works, you must:
+1. Include this LICENSE file
+2. Provide attribution to the Willy Linux Project
+3. State any modifications made
+
+### Trademark
+"Willy Linux" is a trademark of the Willy Linux Project. 
+You may not use this name for derivative distributions without permission.
+
+### No Warranty
+Willy Linux is provided "AS IS" without warranty of any kind, express or implied.
+Use at your own risk. Always backup your data before installation.
+
+---
+
+## Third-Party Components
+
+Willy Linux includes software from various upstream projects:
+- Arch Linux (GPL)
+- Hyprland (Apache 2.0)
+- Waybar (GPL)
+- Rofi (MIT)
+- Linux Kernel (GPL v2)
+- And many other open source components
+
+Each component retains its original license.
+
+---
+
+For the complete GPL v3 license text, visit: https://www.gnu.org/licenses/gpl-3.0.html
