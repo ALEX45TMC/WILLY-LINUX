@@ -2,7 +2,8 @@
 
 <div align="center">
 
-![Willy Linux Logo](assets/logos/willy_logo_w.svg)
+![Willy Linux Logo](
+)
 
 **El Sistema Operativo Definitivo - Ligero, Moderno, Completo**
 
