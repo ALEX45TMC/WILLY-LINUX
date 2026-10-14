@@ -358,11 +358,11 @@ sudo dd if=willy-linux-v3.0.iso of=/dev/sdX bs=4M status=progress
 
 | Tecla | Acción |
 |-------|--------|
-| `XF86AudioRaiseVolume` | Subir volumen (+5%) |
-| `XF86AudioLowerVolume` | Bajar volumen (-5%) |
-| `XF86AudioMute` | Silenciar audio |
-| `XF86MonBrightnessUp` | Subir brillo |
-| `XF86MonBrightnessDown` | Bajar brillo |
+| `XF86AudioRaiseVolume` | Subir volumen (+5%) |%02
+| `XF86AudioLowerVolume` | Bajar volumen (-5%) |%05
+| `XF86AudioMute` | Silenciar audio |%13
+| `XF86MonBrightnessUp` | Subir brillo |%20
+| `XF86MonBrightnessDown` | Bajar brillo |%10
 
 ---
 
